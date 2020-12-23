@@ -12,14 +12,17 @@ print('Qual o nível de dificuldade?')
 print('1 - Fácil')
 print('2 - Médio')
 print('3 - Difícil')
+print('4 - Vidente')
 nivel = int(input('Defina o nível: '))
 
 if ( nivel == 1 ):
     n_tentativas = 20
 elif ( nivel == 2):
     n_tentativas = 10
-else:
+elif ( nivel == 3):
     n_tentativas = 5
+else:
+    n_tentativas = 1
 
 for i in range(1,n_tentativas+1):
     
